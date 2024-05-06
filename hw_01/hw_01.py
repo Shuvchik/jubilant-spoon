@@ -36,5 +36,5 @@ if response.status_code==200:
         longitude = venue.get('geocodes', {}).get('main', {}).get('longitude', 'не указано')
         df.loc[len(df)]=[id, venue['name'], address, latitude, longitude]
 
-df.to_csv(r'C:\GB\DataEngineer\Data_collection\HW\1\result.csv', encoding='utf-8')
+df.to_csv(r'C:\GB\DataEngineer\Data_collection\HW\1\results.csv', encoding='utf-8')
 print(df.head(5))
